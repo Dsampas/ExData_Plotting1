@@ -1,0 +1,6 @@
+png(file="Plot3.png")
+plot(powerpaste$POSIX,powerpaste$Sub_metering_1,type="line",ylab="Energy sub metering",xlab="")
+lines(powerpaste$POSIX,powerpaste$Sub_metering_2,col="red")
+lines(powerpaste$Sub_metering_3,col="blue")
+legend("topright",col=c("black","blue","red"), cex=.95,lty=1,legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+dev.off()
